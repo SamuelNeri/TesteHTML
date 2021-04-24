@@ -14,32 +14,37 @@
             <li> <a href="login.html"> Login / Cadastro </a></li>
             <li> <a href="carrinho.html"> <img src="images/car1.png"> </a></li>
     </ul>
+<script>
 
-    <form method="get">
+function validar() {
+  var nome = forms.usr.value;
+  var senha = forms.senha.value;
+
+  if (nome == "") {
+    alert('Coloque seu nome.')
+    forms.nome.focus();
+    return false;
+  }
+  if (senha == "") {
+    alert('Preencha a senha.')
+    forms.senha.focus();
+    return false;
+  }
+}
+</script>
+    <form name="forms" method="GET">
     <p class="lg"> <b> Login </b> </p>
     
     <div class="log">
     <p class="frm">
     <br>
 
-<script>        
-function login()
-{
-  if(login){
-    alert("Login feito com sucesso");
-  }
-  else{
-    alert("Preencha todos os campos");
-  }
-}
-</script>
-
-    Digite seu Login <input name="usr" > <br> <br>
+    Digite seu Login <input type="text" name="usr" > <br> <br>
     Digite sua Senha <input type="password" name="senha">
     </p>
     <br> <br>
 
-    <input type="button" onclick="login()" value="Entrar">
+    <input type="submit" onclick="return validar()">
 
     <p class= "cds">
     <a href="cadastro.html"> <b> Cadastre-se </b> </a>
