@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+    </div>
+    
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Home </a></li>
+            <li> <a href="produtos.html"> Produtos </a></li>
+            <li> <a href="contato.html"> Contato </a></li>
+            <li> <a href="login.html"> Login / Cadastro </a></li>
+            <li> <a href="carrinho.html"> <img src="images/car1.png"> </a></li>
+                
+        </ul>
+   </nav>
+</header>
+
+<div class = "titulo">
+    <h1 class = "cds">
+        Cadastro
+            </h1>
+
+        <br>
+      <h1 class = "cs">  Seja Bem Vindo! </h1>
+</div>
+
+<hr>
+
+    <form class="frm" method="GET">
+        <script>
+            function btn1()
+            if(btn1){
+                alert("Cadastro feito com sucesso");
+            }
+            else{
+                alert("Preencha todos os campos");
+            }
+            document.getElementById("cadastro").innerHTML=btn1;
+        </script>
+
+       <h2 class = "info"> Nome * <input type = "text" id= "nm" name = "nome"> </h2>
+
+        <br>
+        <br>
+
+        <h2 class = "info"> Telefone * <input type="tel" id="phone" name="tel" placeholder="11-12345-6789" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" required> </h2>
+
+        <br>
+        <br>
+
+       <h2 class = "info"> Email * <input type="text" id="email" name = "email"> </h2>
+
+        <br>
+        <br>
+
+        <h2 class = "info"> Endereco com Número * <input type = "text" id="end" name = "end"> </h2>
+
+        <br>
+        <br>
+
+       <h2 class = "info"> Data de Nascimento * <input type = "date" id = "data_nasc" name = "data_nasc"> </h2>
+
+        <br>
+        <br>
+
+        <h2 class = "info"> Cartão Débito ou Crédito * <input type = "number" id = "card" name = "card" placeholder="Número Do Cartão">
+        <input type ="month" id = "my" name = "my" placeholder="MM/YY" style="width:50px">
+        <input type = "number" id = "cvv" name = "cvv" placeholder = "CVV" style="width:50px"> </h2>
+
+        <br>
+        <br>
+
+        <h2 class = "info"> Login * <input type = "text" id = "login" name = "login"> </h2>
+
+        <br>
+        <br>
+
+        <h2 class = "info"> Senha * <input type = "password" id = "psw" name = "psw" placeholder="numeros e letras"> </h2>
+        <br>
+        <br>
+        <input type="button" onclick="btn1()" value="Cadastrar">
+
+</form>
+
+<footer> <span> &copy 2021 - Guilherme/Geovanna/Rodrigo/Diego - Análise e Desenvolvimento de Sistamas </span> </footer>
+
+</body>
+</html>

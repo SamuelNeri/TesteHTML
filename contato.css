@@ -1,0 +1,145 @@
+*{
+font-family: monospace;
+}
+
+/*body{
+background-color: #94bbe9;
+}
+*/
+.logo{
+    width:90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-left: 17px;
+    background: radial-gradient(circle, rgba(19,92,117,1) 0%, rgba(148,187,233,1) 100%);
+    float:left;
+}
+
+nav ul li{
+    width: 21%;
+    float:left;
+    line-height: 70px;
+    list-style: none;
+    text-align: center;
+    margin-right: -32px;
+}
+
+nav ul li a img{
+    width: 50px;
+    height: 50px;    
+    margin-top: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+}
+
+nav li a:hover{
+    height: 50px;
+    color: #a08e8e;
+}
+
+.frm{
+    text-align: center;
+}
+
+.txt{
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ctt{
+    line-height: 20px;
+    margin-bottom: 50px;
+}
+
+.mapa{
+    text-align: center;
+}
+
+iframe{
+    width: 200px;
+    height: 200px;
+}
+
+.telefone{
+    font-size: 15px;
+    text-align: center;
+}
+
+.probl{
+    width: 600px;
+    height: 600px;
+    margin-top: 30px;
+    margin: auto;
+}
+
+.duvidas{
+    text-align: center;
+    font-size: 15px;
+}
+
+.info{
+    font-size: 15px;
+}
+
+.info1{
+    font-size: 15px;
+}
+
+.info1 input{
+    width: 200px
+}
+
+label,
+textarea {
+    font-family: monospace;
+    font-size: 10px;
+}
+textarea {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 400px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+button{
+    margin-left: 250px;
+}
+
+footer{
+width:100%;
+height: 80px;
+float: left;
+margin-top: 25px;
+background-color: #3bb4d4;
+}
+
+span{
+line-height: 90px;
+margin-left: 400px;
+}
