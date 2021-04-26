@@ -31,6 +31,18 @@ function validar() {
     return false;
   }
 }
+function Login() {
+  var done=0;
+  var usuario = document.getElementsByName('usr')[0].value;
+  usuario=usuario.toLowerCase();
+  var senha= document.getElementsByName('senha')[0].value;
+  senha=senha.toLowerCase();
+  if (usuario=="admin" && senha=="admin") {
+    alert("Logado com sucesso.");
+    done=1
+  }
+  if (done==0) { alert("Dados incorretos, tente novamente"); }
+}
 </script>
     <form name="forms" method="GET">
     <p class="lg"> <b> Login </b> </p>
@@ -44,7 +56,8 @@ function validar() {
     </p>
     <br> <br>
 
-    <input type="submit" onclick="return validar()">
+    <input type="submit" 
+    onclick="Login(); return validar()">
 
     <p class= "cds">
     <a href="cadastro.html"> <b> Cadastre-se </b> </a>
